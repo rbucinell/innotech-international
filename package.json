@@ -1,0 +1,23 @@
+{
+  "name": "innotech-international",
+  "version": "1.0.0",
+  "description": "Source code for innotech-international.com",
+  "main": "index.js",
+  "scripts": {
+    "pugtohtml": "pug --output-style compressed -o dist/html/ src/pug/*.pug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rbucinell/innotech-international.git"
+  },
+  "author": "Ryan Bucinell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rbucinell/innotech-international/issues"
+  },
+  "homepage": "https://github.com/rbucinell/innotech-international#readme",
+  "dependencies": {
+    "pug": "^3.0.2"
+  }
+}
