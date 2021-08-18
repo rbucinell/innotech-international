@@ -1,0 +1,1 @@
+put content files in this directory for give pages
