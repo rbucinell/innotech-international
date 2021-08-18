@@ -1,0 +1,20 @@
+mixin navitem( label, path )
+    li.nav-item.main-nav-item: a.nav-link(href=path) #{label}
+
+nav.navbar.navbar-default.navbar-dark.navbar-expand-lg
+    .container-fluid
+        // nav Brand
+        a.navbar-brand(href='#')
+        img(src='assets/logo_nobg_white.png' alt='Innotech Logo')
+        // nav Toggle Button
+        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarmenu' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+        // nav collapsable menu
+        #navbarmenu.collapse.navbar-collapse
+        ul.navbar-nav.me-auto.mb-2.mb-lg-0
+            +navitem( 'HOME', 'index.html')
+            +navitem( 'MISSION', 'mission.html')
+            +navitem( 'SERVICES', 'services.html')
+            +navitem( 'LINKS', 'links.html')
+            +navitem( 'CLIENTS', 'clients.html')
+            +navitem( 'CONTACT', 'contact.html')
