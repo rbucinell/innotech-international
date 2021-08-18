@@ -4,7 +4,7 @@
   "description": "Source code for innotech-international.com",
   "main": "index.js",
   "scripts": {
-    "pugtohtml": "pug --output-style compressed -o dist/html/ src/pug/*.pug",
+    "pugtohtml": "pug --output-style compressed -o dist/ ./src/templates",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +19,8 @@
   "homepage": "https://github.com/rbucinell/innotech-international#readme",
   "dependencies": {
     "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6"
   }
 }
